@@ -23,6 +23,8 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
+#ifndef RB_PWM_H__
+#define RB_PWM_H__
 
 #include "ruby.h"
 #include "soft_pwm.h"
@@ -39,3 +41,5 @@ VALUE PWM_get_frequency(VALUE self);
 VALUE PWM_set_frequency(VALUE self, VALUE frequency);
 VALUE PWM_stop(VALUE self);
 VALUE PWM_get_running(VALUE self);
+
+#endif //RB_PWM_H__

@@ -29,7 +29,6 @@ SOFTWARE.
 #include <time.h>
 #include "c_gpio.h"
 #include "soft_pwm.h"
-pthread_t threads;
 
 struct pwm
 {
@@ -201,6 +200,7 @@ void pwm_start(unsigned int gpio)
         return;
 
     p->running = 1;
+    pthread_t threads;
     if (pthread_create(&threads, NULL, pwm_thread, (void *)p) != 0)
     {
         // btc fixme - error

@@ -24,6 +24,9 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 
+#ifndef C_GPIO_H__
+#define C_GPIO_H__
+
 int setup(void);
 void setup_gpio(int gpio, int direction, int pud);
 int gpio_function(int gpio);
@@ -53,3 +56,5 @@ void cleanup(void);
 #define PUD_OFF  0
 #define PUD_DOWN 1
 #define PUD_UP   2
+
+#endif //C_GPIO_H__

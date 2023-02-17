@@ -23,6 +23,8 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
+#ifndef RB_GPIO_H__
+#define RB_GPIO_H__
 
 #include "ruby.h"
 #include "c_gpio.h"
@@ -46,3 +48,4 @@ VALUE GPIO_test_high(VALUE self, VALUE channel);
 VALUE GPIO_test_low(VALUE self, VALUE channel);
 VALUE GPIO_set_warnings(VALUE self, VALUE setting);
 
+#endif //RB_GPIO_H__

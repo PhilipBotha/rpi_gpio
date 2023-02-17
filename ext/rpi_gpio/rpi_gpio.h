@@ -24,5 +24,10 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 
+#ifndef RPI_GPIO_H__
+#define RPI_GPIO_H__
+
 void Init_rpi_gpio();
 void define_modules(void);
+
+#endif //RPI_GPIO_H__
